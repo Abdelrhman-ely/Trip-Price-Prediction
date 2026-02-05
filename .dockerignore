@@ -1,0 +1,12 @@
+__pychache__/
+*.pyc
+
+venv/
+.venv_api/
+
+Data/
+Cleaning & EDA/
+Modeling/
+
+best_model.keras
+.ipynb_checkpoints/

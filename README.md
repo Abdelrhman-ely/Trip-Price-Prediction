@@ -1,13 +1,38 @@
-# Trip-Price-Prediction (ML + Unsupervised + Production Deployment)
+# Ride Price Prediction — ML, Unsupervised Learning & Production Deployment
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-success)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![XGBoost](https://img.shields.io/badge/XGBoost-Regressor-orange)
+![Hugging%20Face](https://img.shields.io/badge/Hugging_Face-Spaces-purple)
 
 End-to-end machine learning project for predicting ride prices from structured tabular data, including:
+
 - Leakage-safe evaluation with route-based grouping
-- Supervised regression modeling (XGBoost as final model)
-- Unsupervised learning (PCA + clustering + anomaly detection)
-- Production deployment using FastAPI + Streamlit + Hugging Face Spaces
+- Supervised regression modeling (**XGBoost as final model**)
+- Unsupervised learning (**PCA + clustering + anomaly detection**)
+- Deployment using **FastAPI + Streamlit + Hugging Face Spaces**
 
 ---
 
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Dataset](#dataset)
+- [Features](#features)
+- [Preprocessing](#preprocessing)
+- [Supervised Learning](#supervised-learning)
+- [Validation Strategy](#validation-strategy)
+- [Results](#results)
+- [Unsupervised Learning](#unsupervised-learning)
+- [Deployment](#deployment)
+- [Project Structure](#project-structure)
+- [How to Run Locally](#how-to-run-locally)
+- [API Usage](#api-usage)
+- [Demo Links](#demo-links)
+- [Future Improvements](#future-improvements)
+- [Author](#author)
+
+---
 
 ## Project Overview
 Ride pricing is a real-world regression problem influenced by multiple factors such as distance, route, demand signals (surge), time-of-day, and weather conditions.
@@ -20,10 +45,10 @@ This project builds a production-ready pipeline that predicts ride prices while 
 The dataset contains ~100,000 ride records.
 
 Each row represents a ride with:
-- trip attributes (distance, route)
-- service attributes (cab type, name)
-- pricing signals (surge multiplier)
-- weather conditions (temperature, humidity, pressure, wind, clouds)
+- Trip attributes (distance, route)
+- Service attributes (cab type, name)
+- Pricing signals (surge multiplier)
+- Weather conditions (temperature, humidity, pressure, wind, clouds)
 
 Target variable:
 - **price**
@@ -31,6 +56,7 @@ Target variable:
 ---
 
 ## Features
+
 ### Core Features
 - **Trip:** `distance`, `hour`, `route`
 - **Service:** `cab_type`, `name`
@@ -58,12 +84,12 @@ Saved artifact:
 ---
 
 ## Supervised Learning
-Multiple regression models were trained and evaluated on the same leakage-safe split:
 
+### Models Trained
 - Linear Regression (baseline)
-- Random Forest
-- Gradient Boosting
-- XGBoost (final)
+- Random Forest Regressor
+- Gradient Boosting Regressor
+- XGBoost Regressor (**final**)
 - Neural Network (ANN) — Keras
 
 ---
@@ -147,3 +173,4 @@ This project was deployed using:
 ---
 
 ## Project Structure
+

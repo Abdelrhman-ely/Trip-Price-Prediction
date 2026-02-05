@@ -8,23 +8,6 @@ End-to-end machine learning project for predicting ride prices from structured t
 
 ---
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Dataset](#dataset)
-- [Features](#features)
-- [Preprocessing](#preprocessing)
-- [Supervised Learning](#supervised-learning)
-- [Validation Strategy](#validation-strategy)
-- [Results](#results)
-- [Unsupervised Learning](#unsupervised-learning)
-- [Deployment](#deployment)
-- [Project Structure](#project-structure)
-- [How to Run Locally](#how-to-run-locally)
-- [API Usage](#api-usage)
-- [Future Improvements](#future-improvements)
-- [Author](#author)
-
----
 
 ## Project Overview
 Ride pricing is a real-world regression problem influenced by multiple factors such as distance, route, demand signals (surge), time-of-day, and weather conditions.

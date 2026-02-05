@@ -7,10 +7,10 @@ End-to-end ML project for predicting ride prices using **XGBoost**, **unsupervis
 ## 🎯 Overview
 
 Production-ready ML system built with **~100,000 ride records** featuring:
-- ✅ **Supervised Learning**: XGBoost regression (MAE: 1.199)
-- ✅ **Unsupervised Learning**: KMeans clustering + DBSCAN anomaly detection
-- ✅ **Group-Aware Validation**: No route leakage between train/test
-- ✅ **Full Deployment**: FastAPI + Streamlit on Hugging Face Spaces
+- **Supervised Learning**: XGBoost regression (MAE: 1.199)
+- **Unsupervised Learning**: KMeans clustering + DBSCAN anomaly detection
+- **Group-Aware Validation**: No route leakage between train/test
+- **Full Deployment**: FastAPI + Streamlit on Hugging Face Spaces
 
 ---
 
@@ -59,10 +59,10 @@ Production-ready ML system built with **~100,000 ride records** featuring:
 | Random Forest | 2.805 | 3.854 | - |
 
 ### Why XGBoost?
-- ✅ **Lowest MAE & RMSE**
-- ✅ **Strong generalization** on unseen routes
-- ✅ **Robust** to outliers and missing values
-- ✅ **Fast inference** for production
+- **Lowest MAE & RMSE**
+- **Strong generalization** on unseen routes
+- **Robust** to outliers and missing values
+- **Fast inference** for production
 
 ### Validation Strategy
 **Group-aware split** based on `route`:
@@ -74,14 +74,14 @@ Production-ready ML system built with **~100,000 ride records** featuring:
 
 ## 🔍 Unsupervised Learning Insights
 
-### 🎯 KMeans Clustering (Mobility Patterns)
+### KMeans Clustering (Mobility Patterns)
 
 **Cluster Profiling** analyzed:
-- 📊 Ride count per cluster
-- 💰 Average & median price
-- 📏 Average distance
-- 🚨 Surge rate (% rides with surge > 1)
-- ⏰ Peak hour per cluster
+- Ride count per cluster
+- Average & median price
+- Average distance
+- Surge rate (% rides with surge > 1)
+- Peak hour per cluster
 
 **Discovered Patterns:**
 - **Budget Rides**: Short distance, low surge, economy cabs
@@ -90,9 +90,9 @@ Production-ready ML system built with **~100,000 ride records** featuring:
 - **Luxury Segment**: Premium cabs, specific high-value routes
 
 **Business Value:**
-- 🎯 Targeted pricing per mobility segment
-- 📈 Demand forecasting based on cluster behavior
-- 🚗 Fleet optimization & allocation
+- Targeted pricing per mobility segment
+- Demand forecasting based on cluster behavior
+- Fleet optimization & allocation
 
 ---
 
@@ -111,9 +111,9 @@ Production-ready ML system built with **~100,000 ride records** featuring:
 - Rare routes with inconsistent pricing
 
 **Applications:**
-- 🛡️ **Fraud Detection**: Flag suspicious pricing
-- 💡 **Dynamic Pricing**: Refine rates for outlier routes
-- 📊 **Quality Control**: Monitor pricing consistency
+- **Fraud Detection**: Flag suspicious pricing
+- **Dynamic Pricing**: Refine rates for outlier routes
+- **Quality Control**: Monitor pricing consistency
 
 ---
 

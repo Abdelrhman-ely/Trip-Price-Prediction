@@ -1,10 +1,4 @@
-# Ride Price Prediction — ML, Unsupervised Learning & Production Deployment
-
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-API-success)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
-![XGBoost](https://img.shields.io/badge/XGBoost-Regressor-orange)
-![Hugging%20Face](https://img.shields.io/badge/Hugging_Face-Spaces-purple)
+# Trip Price Prediction — ML, Unsupervised Learning & Production Deployment
 
 End-to-end machine learning project for predicting ride prices from structured tabular data, including:
 
@@ -12,25 +6,6 @@ End-to-end machine learning project for predicting ride prices from structured t
 - Supervised regression modeling (**XGBoost as final model**)
 - Unsupervised learning (**PCA + clustering + anomaly detection**)
 - Deployment using **FastAPI + Streamlit + Hugging Face Spaces**
-
----
-
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Dataset](#dataset)
-- [Features](#features)
-- [Preprocessing](#preprocessing)
-- [Supervised Learning](#supervised-learning)
-- [Validation Strategy](#validation-strategy)
-- [Results](#results)
-- [Unsupervised Learning](#unsupervised-learning)
-- [Deployment](#deployment)
-- [Project Structure](#project-structure)
-- [How to Run Locally](#how-to-run-locally)
-- [API Usage](#api-usage)
-- [Demo Links](#demo-links)
-- [Future Improvements](#future-improvements)
-- [Author](#author)
 
 ---
 
@@ -173,4 +148,44 @@ This project was deployed using:
 ---
 
 ## Project Structure
+
+```text
+Trip-Price-Prediction/
+│── README.md
+│── requirements.txt
+│── Dockerfile
+│── .dockerignore
+│── space.yaml
+│
+│── app.py                  # FastAPI API
+│── streamlit_app.py        # Streamlit UI
+│
+│── models/
+│   ├── best_xgb.pkl
+│   └── preprocessor.pkl
+│
+│── notebooks/
+│   ├── 01_EDA.ipynb
+│   ├── 02_Supervised.ipynb
+│   └── 03_Unsupervised.ipynb
+│
+└── Data/
+    └── sample.csv
+
+---
+
+## How to Run Locally
+
+### 1) Install dependencies
+```bash
+pip install -r requirements.txt
+### 2) Run FastAPI
+uvicorn app:app --reload
+### 3) Run Streamlit
+streamlit run streamlit_app.py
+
+
+🌐 Streamlit App (Hugging Face Spaces)
+
+👉 https://huggingface.co/spaces/abdelrhman111/Trip_PricePrediction_Streamlit
 
